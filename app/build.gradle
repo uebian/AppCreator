@@ -22,21 +22,14 @@ android {
 
 dependencies {
 
-    ext {//配置导入包的version版本 需要对应上面的buildToolsVersion的前两位  已经对as配置好
-        gradleVersion = getGradle().getGradleVersion()
-        compileSdkVersion = android.getCompileSdkVersion()
-        buildToolsVersion2 = compileSdkVersion.substring(compileSdkVersion.lastIndexOf("-") + 1, compileSdkVersion.length())
-    }
-
-
-    if(gradleVersion.equals("4.4") || gradleVersion.equals("4.3") || gradleVersion.equals("4.2") || gradleVersion.equals("4.1")) {
+    if(true) {
         implementation fileTree(include: ['*.jar'], dir: 'libs')
         testImplementation 'junit:junit:+'
         androidTestImplementation 'com.android.support.test:runner:+'
         androidTestImplementation 'com.android.support.test.espresso:espresso-core:+'
-        implementation 'com.android.support:support-v4:' + buildToolsVersion2 + '.+'
-        implementation 'com.android.support:appcompat-v7:' + buildToolsVersion2 + '.+'
-        implementation 'com.android.support:design:' + buildToolsVersion2 + '.+'
+        implementation 'com.android.support:support-v4:' + android.getCompileSdkVersion().substring(android.getCompileSdkVersion().lastIndexOf("-") + 1, android.getCompileSdkVersion().length()) + '.+'
+        implementation 'com.android.support:appcompat-v7:' + android.getCompileSdkVersion().substring(android.getCompileSdkVersion().lastIndexOf("-") + 1, android.getCompileSdkVersion().length()) + '.+'
+        implementation 'com.android.support:design:' + android.getCompileSdkVersion().substring(android.getCompileSdkVersion().lastIndexOf("-") + 1, android.getCompileSdkVersion().length()) + '.+'
         return;
     }
 
