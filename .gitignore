@@ -9,4 +9,3 @@
 /captures
 .externalNativeBuild
 *.log
-/gradle.properties
