@@ -1,4 +1,4 @@
-package net.creatersstudio.appcreater.activities;
+package net.creatersstudio.appcreater;
 
 import android.app.Application;
 import android.os.Environment;
