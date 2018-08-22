@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">AppCreater</string>
+    <string name="ext_projects_folder_name">ACProjects</string>
+    <string name="ext_app_folder_name">.appcreater</string>
 </resources>
