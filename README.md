@@ -1,2 +1,2 @@
-# AppCreater
+# AppCreator
 # 已弃坑，望dalao接坑
